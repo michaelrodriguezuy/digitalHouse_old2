@@ -24,4 +24,60 @@ public class Main {
         return dia+"/"+mes+"/"+anio;
     }
 
-}
+    public static Integer cualGana(int jugada1, int jugada2) {
+        switch ( jugada1 ) {
+        case 1:
+            switch (jugada2) {
+                case 1:
+                    return 0;
+                break;/* piedra vs piedra */
+                case 2:
+                    return 2;
+                break;/* piedra vs papel */
+                case 3:
+                    return 1;
+                break;/* piedra vs tijera */
+            }
+            break;
+        case 2:
+
+            switch (jugada2) {
+                case 1:
+                    return 1;
+                break; /* papel vs piedra */
+                case 2:
+                    return 0;
+                break; /* papel vs papel */
+                case 3:
+                    return 2;
+                break; /* papel vs tijera */
+            }
+            break;
+        case 3:
+
+            switch (jugada2) {
+                case 1:
+                    return 2;
+                break; /* tijera vs piedra */
+                case 2:
+                    return 1;
+                break;/* tijera vs papel */
+                case 3:
+                    return 0;
+                break;/* tijera vs tijera */
+            }
+            break;
+
+
+
+     };
+
+    }
+
+
+
+
+
+
+
+    }
