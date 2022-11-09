@@ -15,7 +15,13 @@ public class Main {
         else {
             System.out.println("El numero 1 NO es divisible entre el 2");
         }
+
+        Socio socio = new Socio("pepe", 45);
+
+        System.out.println("El socio creado es: " + socio.toString());
     }
+
+
 
     public static boolean esDivisible (int Numero1, int Numero2) {
         if ( Numero1 % Numero2 == 0 ) {
