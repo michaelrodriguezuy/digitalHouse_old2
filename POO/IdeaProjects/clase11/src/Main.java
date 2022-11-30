@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Cliente cliente1 = new Cliente(1234, "Fernandez", "12345A", "4654654654RE");
+        Cliente cliente1 = new Cliente(1234, null, "12345A", "4654654654RE");
         CajaAhorro ca1 = new CajaAhorro(cliente1, 100.0, 0.3);
 
         System.out.println(ca1.getSaldo());
