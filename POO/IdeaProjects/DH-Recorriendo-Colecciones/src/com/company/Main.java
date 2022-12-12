@@ -43,6 +43,12 @@ public class Main {
             System.out.println(nombre);
         }
 
+        public eliminarPorNombre() {
+            nombres.remove("Marcelo");
+        }
+        public eliminarPorPosicion() {
+            nombres.remove(1); // elimina a Mario
+        }
 
     }
 }
