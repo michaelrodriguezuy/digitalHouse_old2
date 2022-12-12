@@ -1,4 +1,4 @@
-const { generateText } = require('../util.js');
+const { generateText } = require('../util');
 
 test('Salida de Nombre y Edad', () =>{
     const text = generateText('Daniel', 30);

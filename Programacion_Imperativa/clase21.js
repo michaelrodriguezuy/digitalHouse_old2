@@ -138,6 +138,7 @@ function ordenar(arr, propiedad, ASC) {
     }
 }
 
+
 // ordenar(personas,'legajo', 0) //1=true = ASC // 0=false=DESC
 // console.log('*****ORDEN por PARAMETROS*****')
 // console.table(personas)

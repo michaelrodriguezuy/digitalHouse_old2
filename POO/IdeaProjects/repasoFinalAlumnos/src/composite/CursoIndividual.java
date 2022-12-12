@@ -1,6 +1,6 @@
 package composite;
 
-public class CursoIndividual implements Curso{
+public class CursoIndividual implements Curso, Comparable{
     private String nombre, descripcion;
     private Double cargaHoraria, duracion, valorHora;
 
@@ -33,5 +33,10 @@ public class CursoIndividual implements Curso{
                 ", descripcion='" + descripcion + '\'' +
                 ", precio total=" + calcularPrecio() +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
