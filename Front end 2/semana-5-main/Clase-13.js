@@ -138,6 +138,8 @@ formulario.addEventListener('submit', function (evento) {
     if (estadoErroresOK.email && estadoErroresOK.password && estadoErroresOK.rol && estadoErroresOK.terminos) {
         alert("Pasó todas las validaciones!");
         // ☝ luego reemplazar esto por la funcion de éxito
+        navegarPaginaExito();
+        
     }
 
 });
@@ -158,5 +160,21 @@ formulario.addEventListener('submit', function (evento) {
 
 function navegarPaginaExito() {
     //   desarrollar la funcion aqui
+    const botonForm = document.querySelector('button');
+    botonForm.disabled = true;
+    botonForm.innerText = "Cargando...";
+
+    setTimeout(() => {
+        location.replace('./usuario.html')
+        }, 3000);
+    
+
+    location.hash="no-back-button";
+    location.hash="Again-No-back-button";//esta linea es necesaria para chrome
+    
+    onhashchange=function(){location.hash="no-back-button";}    
+
+    //como ejecutar una instruccion en js =?
 
 }
+
